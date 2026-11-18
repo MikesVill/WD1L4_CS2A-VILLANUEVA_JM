@@ -1,0 +1,150 @@
+* {
+    box-sizing: border-box;
+}
+
+/* Sets the basic style of the page */
+body {
+    margin: 0;
+    padding: 18px 26px;
+    font-family: Arial, Helvetica, sans-serif;
+    background: #f4f6f8;
+    color: #111111;
+}
+
+/* Controls the main content of the page */
+.container {
+    width: 100%;
+    max-width: none;
+    margin: 0;
+    padding: 0;
+    background: transparent;
+    border-radius: 0;
+    box-shadow: none;
+}
+
+/* Styles the main title */
+h1 {
+    margin: 0 0 34px;
+    color: #2c4055;
+    font-size: 48px;
+    line-height: 1.15;
+    font-weight: 700;
+    text-align: left;
+}
+
+h2 {
+    margin: 28px 0 32px;
+    color: #111111;
+    font-size: 36px;
+    line-height: 1.2;
+    text-align: left;
+}
+
+table {
+    border-collapse: collapse;
+}
+
+th,
+td {
+    padding: 15px 14px;
+    border: 1px solid #c9cdd1;
+    text-align: center;
+    font-size: 23px;
+    line-height: 1.25;
+}
+
+th {
+    background: #2c4055;
+    color: #ffffff;
+    font-weight: 700;
+}
+
+.student-table {
+    width: 92%;
+    margin: 0 0 22px;
+    border-collapse: collapse;
+    background: #ffffff;
+}
+
+/* Keeps the student table rows white */
+tbody tr {
+    background: #ffffff;
+}
+
+/* Styles the button used to display the results */
+button {
+    display: inline-block;
+    margin: 0 0 30px;
+    padding: 16px 30px;
+    border: none;
+    border-radius: 0;
+    background: #2c4055;
+    color: #ffffff;
+    font-size: 19px;
+    cursor: pointer;
+}
+
+/* Changes the button color when hovered */
+button:hover {
+    background: #203246;
+}
+
+/* Styles the section where the results will appear */
+#result {
+    width: 100%;
+    margin-top: 0;
+    padding: 24px;
+    background: #ffffff;
+    overflow-x: auto;
+}
+
+/* Makes the results table fill its container */
+#result table {
+    width: 100%;
+    margin: 0;
+    background: #ffffff;
+}
+
+#result th,
+#result td {
+    padding: 14px 12px;
+    font-size: 23px;
+}
+
+/* Adjusts the layout for smaller screens */
+@media (max-width: 700px) {
+    body {
+        padding: 16px;
+    }
+
+    h1 {
+        margin-bottom: 24px;
+        font-size: 34px;
+    }
+
+    h2 {
+        margin: 16px 0 22px;
+        font-size: 28px;
+    }
+
+    .student-table {
+        width: 100%;
+    }
+
+    th,
+    td,
+    #result th,
+    #result td {
+        padding: 10px 7px;
+        font-size: 15px;
+    }
+
+    button {
+        padding: 13px 18px;
+        font-size: 16px;
+    }
+
+    #result {
+        padding: 16px;
+    }
+}

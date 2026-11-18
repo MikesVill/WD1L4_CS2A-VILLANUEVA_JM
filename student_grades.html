@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en"> <!-- Sets the document language to English. -->
+<head>
+    <meta charset="UTF-8"> <!-- Allows the page to display common characters correctly. -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- Makes the page responsive on mobile devices. -->
+    <title>Student Grades</title> <!-- Text shown in the browser tab. -->
+
+    <!-- Connect the external CSS file for page design. -->
+    <link rel="stylesheet" href="style.css">
+
+    <!-- Load the external JavaScript file after the HTML is parsed. -->
+    <script src="script.js" defer></script>
+</head>
+<body>
+    <main class="container"> <!-- Holds all visible page content. -->
+        <h1>List of Enrolled Students</h1> <!-- Main heading of the activity. -->
+
+        <!-- Table showing the original list of enrolled students and grades. -->
+        <table class="student-table">
+            <thead> <!-- Defines the table's column headings. -->
+                <tr>
+                    <th>Student Name</th>
+                    <th>Grade</th>
+                </tr>
+            </thead>
+            <tbody> <!-- Contains the five student records. -->
+                <tr><td>Anna Reyes</td><td>92</td></tr>
+                <tr><td>Ben Santos</td><td>85</td></tr>
+                <tr><td>Carla Cruz</td><td>78</td></tr>
+                <tr><td>David Lim</td><td>97</td></tr>
+                <tr><td>Ella Ramos</td><td>74</td></tr>
+            </tbody>
+        </table>
+
+        <!-- Clicking this button runs showGradeEquivalent() from script.js. -->
+        <button type="button" id="showGradesButton">Show Grade Equivalent</button>
+
+        <!-- JavaScript inserts the grade evaluation table into this empty div. -->
+        <div id="result" aria-live="polite"></div>
+    </main>
+</body>
+</html>
